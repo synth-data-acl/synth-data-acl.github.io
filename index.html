@@ -26,7 +26,51 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  
+  <style>
+    .presenter-profiles {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .presenter-card {
+      text-align: center;
+      flex: 0 1 150px;
+    }
+    
+    .presenter-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .presenter-image:hover {
+      transform: scale(1.05);
+    }
+    
+    .presenter-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: #03a5fc;
+    }
+    
+    .presenter-affiliation {
+      font-size: 1.2rem;
+      color: #666;
+    }
+  </style>
 </head>
+
+
 <body>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -49,25 +93,34 @@
           <h1 class="title is-2 publication-title">Synthetic Data in the Era of LLMs</h1>
           <h1 class="title is-4 publication-title">Tutorial at <a href="https://2025.aclweb.org/program/">ACL 2025</a>
           <h1 class="title is-4 publication-title">Vienna, Austria</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://www.cs.cmu.edu/~vijayv">Vijay Viswanathan</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://xiangyue9607.github.io/">Xiang Yue</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://alisawuffles.github.io/">Alisa Liu</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~yizhongw/">Yizhong Wang</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.phontron.com/">Graham Neubig</a><sup>1</sup>,
-            </span>
-          </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Carnegie Mellon University,</span>
-            <span class="author-block"><sup>2</sup>University of Washington</span>
+          <!-- Profile Pictures Section -->
+          <div class="presenter-profiles">
+            <div class="presenter-card">
+              <img src="static/images/a.jpg" alt="Vijay Viswanathan" class="presenter-image">
+              <a href="https://www.cs.cmu.edu/~vijayv"><div class="presenter-name">Vijay Viswanathan</div></a>
+              <div class="presenter-affiliation">Carnegie Mellon University</div>
+            </div>
+            <div class="presenter-card">
+              <img src="static/images/b.jpg" alt="Xiang Yue" class="presenter-image">
+              <a href="https://xiangyue9607.github.io/"><div class="presenter-name">Xiang Yue</div></a>
+              <div class="presenter-affiliation">Carnegie Mellon University</div>
+            </div>
+            <div class="presenter-card">
+              <img src="static/images/c.jpg" alt="Alisa Liu" class="presenter-image">
+              <a href="https://alisawuffles.github.io/"><div class="presenter-name">Alisa Liu</div></a>
+              <div class="presenter-affiliation">University of Washington</div>
+            </div>
+            <div class="presenter-card">
+              <img src="static/images/d.jpg" alt="Yizhong Wang" class="presenter-image">
+              <a href="https://homes.cs.washington.edu/~yizhongw/"><div class="presenter-name">Yizhong Wang</div></a>
+              <div class="presenter-affiliation">University of Washington</div>
+            </div>
+            <div class="presenter-card">
+              <img src="static/images/e.jpg" alt="Graham Neubig" class="presenter-image">
+              <a href="https://www.cs.cmu.edu/~vijayv"><div class="presenter-name">Graham Neubig</div></a>
+              <div class="presenter-affiliation">Carnegie Mellon University</div>
+            </div>
           </div>
 
           <div class="column has-text-centered">
